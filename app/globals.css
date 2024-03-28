@@ -2,32 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .padding{
+      padding: 20px;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .tamanho{
+    font-size: 13px;
   }
+
+  .tamanhoH1{
+    font-size: 25px;
+  }
+
+  .tamanho-shop{
+    font-size: 30px;
+  }
+
+  .tamanhoStories{
+    font-size: 40px;
+  }
+
+
+  .margin-top{
+    margin-top: 300px;
+  }
+
+  .box_tamanho{
+    padding: 10px;
+  }
+
+  .spacee{
+    padding-left: 5px;
+    font-size: 14px;
+  }
+
+  .banner{
+    background-image: url('../public/banner.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+
+  .bannerH1{
+    font-size: 40px;
+  }
+
+  .bannerP{
+      font-size: 20px;
+  }
+
+  .tamanhoNeed{
+    font-size: 25px;
+    font-weight: normal;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,100vh); /* 50% da altura da viewport */
+    grid-gap: 0; /* Remove qualquer espaçamento entre as células */
+    opacity: 0.8;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image1 {
+    background-image: url('../public/girl-1.jpeg');
+}
+
+.image2 {
+    background-image: url('../public/girl-2.avif');
+}
+
+.image3 {
+    background-image: url('../public/girl-3.avif');
+}
+
+.image4 {
+    background-image: url('../public/girl-4.webp');
+}
+
+.image5 {
+  background-image: url('../public/girl-1.jpeg');
+}
+
+
+
 }
